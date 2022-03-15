@@ -35,9 +35,9 @@
   position: absolute;
   left: 64px; /*смещен вправо относительно левого края родительского блока*/
   align-self: center; /*выровнен по центру родительского блока*/
-  text-align: center;
-  line-height: 96px;  /*Параметры шрифта*/
-  font-size: 102px; 
+  
+  line-height: 96px; /*Параметры шрифта*/
+  font-size: 102px;
   font-weight: bold;
   z-index: 3;
 }
@@ -45,11 +45,11 @@
 .header__subtitle{/*Кусочек текста*/
   margin: 0px; /*Обнулили внешние отступы*/
   position: absolute; 
-  left: 64px;   /*Смещен вправо и вверх относительно родительского блока*/
+  left: 64px;/*Смещен вправо и вверх относительно родительского блока*/
   bottom: 30px;
-  width: 380px; 
+  width: 388px;
   line-height: 25px;  /*Параметры шрифта*/
-  font-size: 18px; 
+  font-size: 18px;
   font-weight: normal;
   z-index: 2;
 }
@@ -64,7 +64,7 @@
   right: 0;
   bottom: 0;
   width: 765px;  /*Размеры картинки*/
-  height: 608;
+  height: 608px;
   z-index: 1;
 }
 
