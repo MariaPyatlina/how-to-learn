@@ -1,31 +1,369 @@
 .page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  min-width: 1100px;  /* минимальная ширина страницы */
+  max-width: 1600px;  /* максимальная ширине страницы*/
+  margin: 0 auto;     /* для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* задали шрифты */
 }
 
+/*------------------HEADER----------------------------------------------------------------------------------*/
+
 .header {
+  display: flex;  /*Сделали флекс-контенером*/
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  background-color: #f2f2f2; /*Фон хедера*/
+  border: 1px slolid red;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
+.logo{ /*Логотип располагается в левом верхнем углу родительского блока*/
+  width: 183px;
+  height: 32px;
+}
+
+.logo_place_header{ /*Размер картинки*/
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 4;
+}
+
+.header__title{/* Заголовок */
+  margin: 0px; /*Обнулили внешние отступы*/
+  width: 730px;
+  position: absolute;
+  left: 64px; /*смещен вправо относительно левого края родительского блока*/
+  align-self: center; /*выровнен по центру родительского блока*/
+  line-height: 96px;  /*Параметры шрифта*/
+  font-size: 102px; 
+  font-weight: bold;
+  z-index: 3;
+}
+
+.header__subtitle{/*Кусочек текста*/
+  margin: 0px; /*Обнулили внешние отступы*/
+  position: absolute; 
+  left: 64px;   /*Смещен вправо и вверх относительно родительского блока*/
+  bottom: 30px;
+  width: 380px; 
+  line-height: 25px;  /*Параметры шрифта*/
+  font-size: 18px; 
+  font-weight: normal;
+  z-index: 2;
+}
+
+.header__link{ /*стили для ссылки*/
+  text-decoration: none;
+  color:  #2f80ed;
+}
+
+.header__main-illustration{ /* Картинка в хедере */
+  position: absolute; /*Расположение картинки*/
+  right: 0;
+  bottom: 0;
+  width: 765px;  /*Размеры картинки*/
+  height: 608;
+  z-index: 1;
+}
+
+.header__square-pic { /* Синий квадрат  в хедере */
+  position: absolute; /*Расположение квадрата*/
+  right: 0;
+  bottom: 0;
+  height: 568px; /*Размеры квадрата*/
   width: 568px;
+  background-color:  #2f80ed; /*Цвет квадрата*/
+  z-index: 0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+
+
+
+/*------------------Content---------------------------------------------------------------------------------*/
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;  /*Секции располагаются в стобце*/
+}
+
+/*------------------Description---------------------------------------------------------------------------------*/
+.description { /*Блок Дескрипшен */
+  display: flex;  /*Сделали флекс-контенером*/
+  justify-content: center; 
+  margin: 100px 0px 0px 0px; 
+  min-height: 350px;
+} 
+
+.two-columns { /*Область, в которой расположены колонки*/
+  display: flex;  /*Сделали флекс-контенером*/
+  width: 80%;  /*Ширина блока,в котором размещены колонки - 80% от ширины родительского блока*/
+  flex-direction: row;
+  justify-content: space-between; 
+} 
+
+.two-columns__brief { /*Контейнер с заголовком*/
+  margin: 0px;
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color:  #2f80ed;
+}  
+
+.two-columns__main-text {  /*Контейнер с текстом */
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragrapf {  /*Параграфы*/
+  margin: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__paragrapf:nth-of-type(2) { /*Псевдокласс для 2го параграфа*/
+  margin: 30px 0px 30px 0px;
+}
+
+.two-columns__span-accent {  /*Span элемент */
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+
+/*-------------------------------------Цифры и Факты --------------------------------------*/
+.digits { 
+  display: flex;  /*Сделали флекс-контенером*/
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0px; 
+}
+
+.section__title {/*Заголовок секции*/
+  text-align: center; /*Выровняли текст по центру*/
+  margin:  0;
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+} 
+
+.section__subtitle { /*Подзаголовок секции*/
+  text-align: center; /*Выровняли текст по центру*/
+  margin: 20px 0 0px 0;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+} 
+
+.table { /*Таблица или место для блоков. Еще не понятно*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0px auto;
+} 
+
+.table__cell {/*Ячейка*/
+  margin-top: 60px;
+  width: 250px;
+} 
+
+.table__heading {/*Заголовок в ячейке*/
+  margin: 0px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+} 
+
+.table__text {/*Текст в ячейке*/
+  margin: 20px 0px 0px 0px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+} 
+
+/*------------------Метод Феймана---------------------------------------------------------------------------------*/
+.feynman{/*Задаем параметры блоку*/
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 890px;
+}
+
+.feynman__title{ /*Параметры заголовка*/
+  text-align: center; /*Отцентрировали текст*/
+  margin: 100px 0 0 0;
+  width: 648px; 
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.feynman__subtitle{ /*Параметры подзаголовка*/
+  margin: 70px 0 0 0;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.feynman__link{ /*Параметры ссылки*/
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  margin: 0;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal; 
+}
+
+.feynman__background-image{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+
+/*------------------Принципы обучения Кауфмана---------------------------------------------------------------------------------*/
+.kaufman{ /*Задаем параметры блоку*/
+  display: flex;  /*Сделали флекс-контенером*/
+  position: relative;
+  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 0px; 
+  background-color: #1f1f1f;
+  overflow: hidden;
+}
+
+.section__title_theme_dark { /*Модификатор цвета заголовка для темной темы*/
+  color: white;
+}
+
+.section__subtitle_theme_dark { /*Модификатор цвета подзаголовка для темной темы*/
+  color: white;
+}
+
+.table_theme_dark { /*Модификатор таблицы для темной темы*/
+  margin: 0px auto;
+  z-index: 2;
+} 
+
+.table__cell_theme_dark {  /*Модификатор ячейки в таблице для темной темы*/
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
 }
+
+.table__heading_theme_dark { /*Модификатор заголовка в ячейке для темной темы*/
+  color: white;
+}
+
+.table__text_theme_dark { /*Модификатор текста в ячейке для темной темы*/
+  color: white;
+}
+
+.kaufman__triangle { /*Параметры картинки с треугольником*/
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0px;
+  right: -210px; /* сместили вправо за границу блока*/
+  z-index: 0; /*Расположили за таблицей*/
+}
+
+
+/*------------------FOOTER----------------------------------------------------------------------------------*/
+.footer{
+  display: flex;  /*Сделали флекс-контенером*/
+  justify-content: center; /* Содержимое контейнера выровнено по центру*/
+  flex-basis: 711px;
+  /*height: 100vh;*/
+  min-height: 350px;
+  max-height: 700px;
+  background-color: #1f1f1f; /*фон подвала*/
+  padding: 60px 0px 40px 0px;
+}
+
+.footer__columns {  /*Блок элементов в подвале*/
+  width: 90%;  /*Ширина блока,в котором размещены колонки - 90% от ширины родительского блока*/
+  display: flex;  /*Сделали флекс-контенером*/
+  flex-direction: row;  /*Расположили элементы в строку*/
+  justify-content: space-between; /* Равное расстояние между элементами*/
+} 
+
+.footer__column_content-copyright { /*Копирайт - первая колонка*/
+  display: flex;
+  flex-direction: column;   /*Расположили элементы в столбец*/
+  justify-content: space-between; /*Выравниваем вдоль главной оси - расстояние между элементами*/
+  width: 50%;
+}  
+
+.logo_place_footer{ /*Размер картинки*/
+  width: 183px;
+  height: 35px;
+}
+
+.footer__author { /*Автор*/
+  margin: 18px 0px;
+  color: white;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}  
+
+.footer__column_content-info{ /*Блок О практикуме - Вторая колонка*/
+  margin-bottom: 16px;
+}  
+
+.footer__column-heading {/*Параметры заголовока списка*/
+  margin: 0px 0px 20px 0px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+} 
+
+.footer__column-links { /*Параметры списка ссылок*/
+  list-style: none;
+  margin: 0px 0px 16px 0px;
+  padding: 0px;
+}
+
+.footer__column-link { /*Параметры для ссылок*/
+  margin: 0px;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+} 
+
+.footer__columns_content_social { /*Блок Соцсети - третья колонка*/
+  margin-bottom: 16px;
+} 
+
+.footer__social-icon { /*Параметры иконок в списке*/
+  width: 16px;
+  height: 16px;
+  margin: 0px 10px 0px 0px;
+} 
+
+
+
