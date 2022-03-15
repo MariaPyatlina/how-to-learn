@@ -35,7 +35,6 @@
   position: absolute;
   left: 64px; /*смещен вправо относительно левого края родительского блока*/
   align-self: center; /*выровнен по центру родительского блока*/
-  
   line-height: 96px; /*Параметры шрифта*/
   font-size: 102px;
   font-weight: bold;
@@ -92,7 +91,7 @@
   justify-content: center;
   margin: 100px 0px 0px 0px;
   min-height: 350px;
-} 
+}
 
 .two-columns { /*Область, в которой расположены колонки*/
   display: flex;  /*Сделали флекс-контенером*/
@@ -108,7 +107,7 @@
   font-size: 18px;
   font-weight: normal;
   color:  #2f80ed;
-}  
+}
 
 .two-columns__main-text {  /*Контейнер с текстом */
   display: flex;
@@ -151,7 +150,7 @@
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
-} 
+}
 
 .section__subtitle { /*Подзаголовок секции*/
   text-align: center; /*Выровняли текст по центру*/
@@ -160,7 +159,7 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-} 
+}
 
 .table { /*место для блоков.*/
   display: flex;
@@ -169,26 +168,26 @@
   justify-content: space-between;
   width: 1100px;
   margin: 0px auto;
-} 
+}
 
 .table__cell {/*Ячейка*/
   margin-top: 60px;
   width: 250px;
-} 
+}
 
 .table__heading {/*Заголовок в ячейке*/
   margin: 0px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-} 
+}
 
 .table__text {/*Текст в ячейке*/
   margin: 20px 0px 0px 0px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-} 
+}
 
 /*------------------Метод Феймана---------------------------------------------------------------------------------*/
 
@@ -243,7 +242,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 90px 0px; 
+  padding: 90px 0px;
   background-color: #1f1f1f;
   overflow: hidden;
 }
@@ -259,7 +258,7 @@
 .table_theme_dark { /*Модификатор таблицы для темной темы*/
   margin: 0px auto;
   z-index: 2;
-} 
+}
 
 .table__cell_theme_dark {  /*Модификатор ячейки в таблице для темной темы*/
   width: 200px;
@@ -303,7 +302,7 @@
   display: flex;  /*Сделали флекс-контенером*/
   flex-direction: row;  /*Расположили элементы в строку*/
   justify-content: space-between; /* Равное расстояние между элементами*/
-} 
+}
 
 .footer__column_content-copyright { /*Копирайт - первая колонка*/
   display: flex;
@@ -350,7 +349,7 @@
   font-size: 18px;
   font-weight: normal;
   color: white;
-} 
+}
 
 .footer__columns_content_social { /*Блок Соцсети - третья колонка*/
   margin-bottom: 16px;
