@@ -44,7 +44,7 @@
 
 .header__subtitle{/*Кусочек текста*/
   margin: 0px; /*Обнулили внешние отступы*/
-  position: absolute; 
+  position: absolute;
   left: 64px;/*Смещен вправо и вверх относительно родительского блока*/
   bottom: 30px;
   width: 388px;
@@ -89,8 +89,8 @@
 /*------------------Description---------------------------------------------------------------------------------*/
 .description { /*Блок Дескрипшен */
   display: flex;  /*Сделали флекс-контенером*/
-  justify-content: center; 
-  margin: 100px 0px 0px 0px; 
+  justify-content: center;
+  margin: 100px 0px 0px 0px;
   min-height: 350px;
 } 
 
@@ -98,8 +98,8 @@
   display: flex;  /*Сделали флекс-контенером*/
   width: 80%;  /*Ширина блока,в котором размещены колонки - 80% от ширины родительского блока*/
   flex-direction: row;
-  justify-content: space-between; 
-} 
+  justify-content: space-between;
+}
 
 .two-columns__brief { /*Контейнер с заголовком*/
   margin: 0px;
@@ -136,12 +136,12 @@
 
 /*-------------------------------------Цифры и Факты --------------------------------------*/
 
-.digits { 
+.digits {
   display: flex;  /*Сделали флекс-контенером*/
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 100px 0px; 
+  margin: 100px 0px;
 }
 
 .section__title {/*Заголовок секции*/
@@ -203,7 +203,7 @@
 .feynman__title{ /*Параметры заголовка*/
   text-align: center; /*Отцентрировали текст*/
   margin: 100px 0 0 0;
-  width: 648px; 
+  width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -225,7 +225,7 @@
   margin: 0;
   line-height: 51px;
   font-size: 36px;
-  font-weight: normal; 
+  font-weight: normal;
 }
 
 .feynman__background-image{
@@ -240,7 +240,7 @@
 .kaufman{ /*Задаем параметры блоку*/
   display: flex;  /*Сделали флекс-контенером*/
   position: relative;
-  justify-content: center; 
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   padding: 90px 0px; 
@@ -310,7 +310,7 @@
   flex-direction: column;   /*Расположили элементы в столбец*/
   justify-content: space-between; /*Выравниваем вдоль главной оси - расстояние между элементами*/
   width: 50%;
-}  
+}
 
 .logo_place_footer{ /*Размер картинки*/
   width: 183px;
@@ -323,11 +323,11 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-}  
+}
 
 .footer__column_content-info{ /*Блок О практикуме - Вторая колонка*/
   margin-bottom: 16px;
-}  
+}
 
 .footer__column-heading {/*Параметры заголовока списка*/
   margin: 0px 0px 20px 0px;
@@ -335,7 +335,7 @@
   font-size: 18px;
   font-weight: bold;
   color: white;
-} 
+}
 
 .footer__column-links { /*Параметры списка ссылок*/
   list-style: none;
@@ -354,10 +354,10 @@
 
 .footer__columns_content_social { /*Блок Соцсети - третья колонка*/
   margin-bottom: 16px;
-} 
+}
 
 .footer__social-icon { /*Параметры иконок в списке*/
   width: 16px;
   height: 16px;
   margin: 0px 10px 0px 0px;
-} 
+}
