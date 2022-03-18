@@ -314,7 +314,7 @@
   flex-direction: column;  /*Расположили элементы в столбец*/
 }
 
-.footer__column_content-copyright { /*Копирайт - первая колонка*/
+.footer__column_content_copyright { /*Копирайт - первая колонка*/
   flex-basis: 711px;
   justify-content: space-between; /*Выравниваем вдоль главной оси - расстояние между элементами*/
 }
@@ -332,7 +332,7 @@
   font-weight: normal;
 }
 
-.footer__column_content-info{ /*Блок О практикуме - Вторая колонка*/
+.footer__column_content_info{ /*Блок О практикуме - Вторая колонка*/
   justify-content: flex-start; /*Контент в блоке прижат к верхнему левому краю*/
   align-items: flex-start;
 }
@@ -359,7 +359,7 @@
   color: white;
 }
 
-.footer__columns_content_social { /*Блок Соцсети - третья колонка*/
+.footer__column_content_social { /*Блок Соцсети - третья колонка*/
   justify-content: flex-start; /*Контент в блоке прижат к верхнему левому краю*/
   align-items: flex-start;
 }
