@@ -310,9 +310,9 @@
 }
 
 .footer__column{ /*Общие параметры для колонок*/
-  display: flex; 
+  display: flex;
   flex-direction: column;  /*Расположили элементы в столбец*/
-} 
+}
 
 .footer__column_content-copyright { /*Копирайт - первая колонка*/
   flex-basis: 711px;
