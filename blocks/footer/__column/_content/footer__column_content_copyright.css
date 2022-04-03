@@ -1,0 +1,4 @@
+.footer__column_content_copyright { /*Копирайт - первая колонка*/
+    flex-basis: 711px;
+    justify-content: space-between; /*Выравниваем вдоль главной оси - расстояние между элементами*/
+  }

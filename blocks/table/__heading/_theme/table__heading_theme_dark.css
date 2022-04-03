@@ -1,0 +1,3 @@
+.table__heading_theme_dark { /*Модификатор заголовка в ячейке для темной темы*/
+    color: white;
+  }

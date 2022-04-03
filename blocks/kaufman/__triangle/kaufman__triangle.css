@@ -1,0 +1,10 @@
+.kaufman__triangle { /*Параметры картинки с треугольником*/
+    width: 877px;
+    height: 877px;
+    background-image: url(../../../images/kaufman-triangle.svg);
+    background-size: 877px 877px;
+    position: absolute;
+    top: 0px;
+    right: -210px; /* сместили вправо за границу блока*/
+    z-index: 0; /*Расположили за таблицей и заголовками*/
+  }

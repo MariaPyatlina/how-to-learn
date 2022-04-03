@@ -1,0 +1,11 @@
+.header__title{/* Заголовок */
+    margin: 0px; /*Обнулили внешние отступы*/
+    margin-left: 64px;
+    width: 730px;
+    justify-content: flex-start;
+    align-self: center; /*выровнен по центру родительского блока*/
+    line-height: 96px; /*Параметры шрифта*/
+    font-size: 102px;
+    font-weight: bold;
+    z-index: 3;
+  }

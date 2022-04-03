@@ -1,0 +1,8 @@
+.header__main-illustration{ /* Картинка в хедере */
+    position: absolute; /*Расположение картинки*/
+    right: 0;
+    bottom: 0;
+    width: 765px;  /*Размеры картинки*/
+    height: 608px;
+    z-index: 1;
+  }

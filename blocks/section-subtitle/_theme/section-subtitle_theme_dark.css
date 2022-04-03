@@ -1,0 +1,4 @@
+.section-subtitle_theme_dark { /*Модификатор цвета подзаголовка для темной темы*/
+    color: white;
+    z-index: 1;
+  }

@@ -1,0 +1,4 @@
+.section-title_theme_dark { /*Модификатор цвета заголовка для темной темы*/
+    color: white;
+    z-index: 1;
+  }

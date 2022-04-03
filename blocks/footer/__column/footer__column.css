@@ -1,0 +1,4 @@
+.footer__column{ /*Общие параметры для колонок*/
+    display: flex;
+    flex-direction: column;  /*Расположили элементы в столбец*/
+  }

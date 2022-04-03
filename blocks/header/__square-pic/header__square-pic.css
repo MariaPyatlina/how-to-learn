@@ -1,0 +1,9 @@
+.header__square-pic { /* Синий квадрат  в хедере */
+    position: absolute; /*Расположение квадрата*/
+    right: 0;
+    top: 64px;
+    height: 568px; /*Размеры квадрата*/
+    width: 568px;
+    background-color:  #2f80ed; /*Цвет квадрата*/
+    z-index: 0;
+  }

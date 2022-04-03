@@ -1,0 +1,5 @@
+.description { /*Блок Дескрипшен */
+    display: flex;  /*Сделали флекс-контенером*/
+    justify-content: center;
+    margin: 100px 0px 0px 0px;
+  }

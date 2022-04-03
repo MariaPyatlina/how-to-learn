@@ -1,0 +1,4 @@
+.table_theme_dark { /*Модификатор таблицы для темной темы*/
+    margin: 0px auto;
+    z-index: 1;
+  }

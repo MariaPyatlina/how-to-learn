@@ -1,0 +1,9 @@
+.feynman__title{ /*Параметры заголовка*/
+    text-align: center; /*Отцентрировали текст*/
+    margin: 100px 0 0 0;
+    width: 648px;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: bold;
+    z-index: 2;
+  }

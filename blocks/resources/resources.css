@@ -1,0 +1,7 @@
+.resources {
+    padding:100px 0 217px 0;
+    display: flex;  /*Сделали флекс-контенером*/
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

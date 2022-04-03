@@ -1,0 +1,11 @@
+.header__subtitle{/*Кусочек текста*/
+    margin: 0px; /*Обнулили внешние отступы*/
+    position: absolute;
+    left: 64px;/*Смещен вправо и вверх относительно родительского блока*/
+    bottom: 30px;
+    width: 388px;
+    line-height: 25px;  /*Параметры шрифта*/
+    font-size: 18px;
+    font-weight: normal;
+    z-index: 2;
+  }

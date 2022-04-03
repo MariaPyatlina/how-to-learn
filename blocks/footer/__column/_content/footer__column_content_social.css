@@ -1,0 +1,4 @@
+.footer__column_content_social { /*Блок Соцсети - третья колонка*/
+    justify-content: flex-start; /*Контент в блоке прижат к верхнему левому краю*/
+    align-items: flex-start;
+  }

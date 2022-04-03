@@ -1,0 +1,8 @@
+.footer{
+    display: flex;  /*Сделали флекс-контенером*/
+    box-sizing: border-box;
+    justify-content: center; /* Содержимое контейнера выровнено по центру*/
+    min-height: 350px;
+    background-color: #1f1f1f; /*фон подвала*/
+    padding: 60px 0px 40px 0px;
+  }
